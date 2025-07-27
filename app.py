@@ -7,7 +7,7 @@ from PIL import Image, ImageOps
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
-model = load_model('mnist_cnn_model.h5')
+model = load_model('best_mnist_model_lite.h5')
 
 def preprocess_image(image_path):
     from PIL import Image, ImageOps
